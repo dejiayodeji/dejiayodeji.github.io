@@ -14,6 +14,7 @@ setInterval(function() {
 
 function updateClock(remainingTime) {
     // Display time difference
+    var days = Math.floor(remainingTime.asDays()),
         hours = Math.floor(remainingTime.asHours()) % 24,
         mins = Math.floor(remainingTime.asMinutes()) % 60,
         seconds = Math.floor(remainingTime.asSeconds()) % 60;
